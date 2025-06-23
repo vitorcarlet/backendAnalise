@@ -86,11 +86,3 @@ async def analyze(input: str, grammar: str, analysis_type: str) -> dict:
             "ERROR_CODE":   1,
             "errorMessage": f"Houve um erro! {e}"
         }
-
-
-# ---------------------------------------------------------------------------
-# Execução local (opcional)
-# ---------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", reload=True, port=8000)
